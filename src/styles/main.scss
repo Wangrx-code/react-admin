@@ -1,0 +1,43 @@
+@import "./sassConfig.scss";
+@import "./normalize.scss";
+// 全局性公共的样式
+body { 
+    background-color: #001529 !important; // 权重最高
+}
+.inline-button {
+    button + button { margin-left: 10px; }
+}
+.table-wrap { padding-top: 30px; }
+
+// text-align
+.text-center { text-align: center; }
+
+// color
+.color-red { color: #ff0000; }
+
+// float
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+// spacing
+.spacing-15 { height: 15px; }
+.spacing-30 { height: 30px; }
+
+.form-column {
+    padding-top: 15px;
+    border-top: 1px solid #e3e3e3;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #344a5f;
+}
+.form-item-inline-control {
+    .ant-form-item {
+        display: block;
+    }
+    .ant-form-item-label {
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+    }
+}
